@@ -1,0 +1,140 @@
+/*-------------------------------------------------------------------Home Page Styling------------------*/
+
+/*
+html{
+    overflow:hidden;
+}
+*/
+
+.hp_style {
+    background-image:url(/assets/images/background1.jpg);
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:100vh;
+    width: 100vw;
+}
+
+.text_style{
+    color: #F4C2C2;
+    font-size: 30px;
+    font-family: "Grand Hotel", serif;
+    float: right;
+    padding-right: 50px;
+}
+
+/*
+hr{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25%;
+    border: 2px solid #F4C2C2;
+}
+*/
+
+/*------------------------------------------------------------- Search Button Stylin------------------------*/
+
+
+.btn {
+    position: absolute;
+    right: 50px;
+    margin-top: 7%;
+}
+
+
+
+.btn a{
+    position: absolute;
+    right: 50px;
+    font-family: serif;
+    text-decoration: none;
+    width: 240px;
+    height: 80px;
+    line-height: 80px;
+    display: block;
+    color: #F4C2C2;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 1.5px;
+    border-radius: 3px;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+
+
+.btn a:hover {
+    border: 1px solid #F4C2C2;
+    background: slategrey;
+}
+
+
+
+
+.btn a::before{
+    content: '';
+    width: 30px;
+    height: 100%;
+    background: slategrey;
+    filter: blur(30px);
+    transform: skewX(-30deg);
+    position: absolute;
+    top: 0;
+    left: -30%;
+    transition: 0.7s;
+}
+
+
+
+
+.btn a:hover::before{
+    left: 130%;
+
+}
+
+/*---------------------------------------------------------------------Ingredients Input Styling-------------------------*/
+
+.input{
+    border-top-style: none;
+    border-right-style: none;
+    border-left-style: none;
+    border-bottom-style: none; 
+    background-color: #fff;
+    text-align: center;
+
+}
+
+
+#ingredientsInput{
+    position: absolute;
+    right: 100px;
+    width: 240px;
+    height: 50px;
+    border-bottom: 2px solid #F4C2C2
+}
+
+/*----------------------------------------------------------------------- Cards Styling --------------------------------- */
+
+.card-body{
+    text-align: center;
+    color: #b7a57a;
+}
+
+
+
+@media screen and (min-width: 40em) {
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 3%;
+    }
+ 
+    .card {
+        flex: 0 1 calc(25% - 1em);
+    }
+}
